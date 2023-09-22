@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Get YouTube Thumbnail</h1>
+<input type="url" id="link_video" name="Link_Video" required>
+<button onclick="Get_Thumbnail()">Download Now</button>
+<div>
+    <img id ="img" src="">
+</div>
+<script>
+    function Get_Thumbnail(){
+    link_video = document.getElementById('link_video').value
+    video_id = link_video.split('v=') [1]
+    document.getElementById("img").setAttribute('scr', 'https://i3.ytimg.com/vi/${erLk59H86ww}/maxresdefault.jpg')
+    }
+</script>
+</body>
+</html>
